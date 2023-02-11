@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AboutComponent } from './components/about/about.component';
+import { PDPComponent } from './components/pdp/pdp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    PDPComponent
   ],
   imports: [
     BrowserModule,

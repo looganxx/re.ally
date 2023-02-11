@@ -1,0 +1,8 @@
+<div
+  [ngStyle]="{ 'background-image': 'url(' + photoUrl + ')', 'height': photoSize + 'px', 'width': photoSize + 'px' }"
+>
+  <div *ngIf="showText" class="text-box">
+    <div class="text">Text 1</div>
+    <div class="text">Text 2</div>
+  </div>
+</div>

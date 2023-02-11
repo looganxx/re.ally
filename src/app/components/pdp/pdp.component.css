@@ -1,0 +1,14 @@
+.text-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .text {
+    font-size: 30px;
+    color: white;
+  }
+  

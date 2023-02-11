@@ -1,0 +1,50 @@
+<!-- Background image -->
+<div class="p-5 text-center bg-image text-white full-screen welcome-image mb-5">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-start align-items-center h-100">
+      <div class="flex-fill text-start ms-5">
+        <h1 class="mb-3">Buy and sell homes - <br> faster, easier and more securely</h1>
+        <h4 class="mb-3">Powered by DFINITY &#169; Web3 Technology</h4>
+        <a routerLink="/register" role="button" type="button" class="btn btn-outline-light btn-rounded btn-lg btn-custom-color">Get Started</a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center h-100 me-5">
+        <img src="assets/re_ally_white-removebg.png" alt="image description" width="200" height="200">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+
+<div class="container-fluid text-center mb-5">
+  <h2 class="mb-2" id="why-state">
+    The future of real estate is now with re.ally
+  </h2>
+  <h5>
+      Agents, buyers and sellers all over the country love
+      the simplicity and security of re.ally.
+  </h5>
+
+</div>
+
+<div class="container-fluid col-8 col-xlg-6 justify-content-center">
+  <div class="card text-center bg-custom">
+    <div class="card-body text-white">
+      <h5 class="card-title">How?</h5>
+      <h5 class="card-title">Come avviene tutto il processo</h5>
+      <p class="card-text">immagini che rappresentano i vari stati 4max</p>
+      <i class="fa-regular fa-house-user"></i>
+      <!-- registra il tuo immobile -> vendi  -->
+      <!-- trova l' immobile che ti piace -> contatta il venditore -> compra -->
+      <a routerLink="/register" role="button" type="button" class="btn btn-outline-light btn-rounded btn-lg btn-card-custom-color">Get Started</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div>{{ title }} app is running!</div>
+  <p> Greet {{ ic_response }}</p>
+  
+  <input type="text" id="name" name="name" #name>
+  <button (click)="getGreet(name.value)">get data</button>
+</div>
+

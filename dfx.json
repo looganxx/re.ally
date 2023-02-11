@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "land_registry_backend": {
+      "main": "land_registry_backend/main.mo",
+      "type": "motoko"
+    },
+    "land_registry": {
+      "dependencies": [
+        "land_registry_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/index.html"
+      },
+      "source": [
+        "src/assets",
+        "dist/land_registry/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

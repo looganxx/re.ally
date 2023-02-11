@@ -1,0 +1,13 @@
+.nav-custom-color {
+  background-color: rgb(20, 66, 114);
+}
+
+.navbar-brand {
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.navbar {
+  box-shadow: none;
+}

@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;400;500&display=swap');
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background: linear-gradient(to bottom,
+      rgb(10, 38, 71) 35%,
+      rgb(20, 66, 114)40%,
+      rgb(32, 82, 149)45%,
+      rgb(44, 116, 179)); */
+  background-color: rgb(236, 234, 234);
+  font-family: 'Martian Mono', monospace;
+  color: black;
+  font-size: 13px;
+  /* text-shadow: 0 0 1px #BDCDD6; */
+}

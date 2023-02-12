@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  isClicked: boolean = false;
 
   constructor() { }
 
@@ -16,5 +16,9 @@ export class NavbarComponent implements OnInit {
 
   onMenuClick() {
     // menuItems.style.display = (menuItems.style.display === "block") ? "none" : "block";
+  }
+
+  toggleClick() {
+    this.isClicked = !this.isClicked;
   }
 }

@@ -1,0 +1,17 @@
+.custom-width {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.custom-margin {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 450px;
+}
+
+.percentile-margin {
+  margin-top: 20%;
+}

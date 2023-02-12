@@ -10,4 +10,13 @@
 
 .navbar {
   box-shadow: none;
+  height: auto;
+}
+
+.btn{
+  transition: all 0.25s ease-out !important;
+}
+
+.clicked {
+  transform: rotate(90deg)
 }

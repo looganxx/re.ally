@@ -2,22 +2,10 @@
   background-image: url('src/assets/wonderful-house.jpg');
   height: 400px;
 }
-
 .btn-custom-color:hover {
-  background-color:rgb(20, 66, 114);
-  border-color:rgb(20, 66, 114);
-  color: #fff;
-  font-weight: regular;
-}
-
-.bg-custom {
-  background-color: #144272;
-}
-
-.btn-card-custom-color:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: rgb(20, 66, 114);
+  background-color: rgb(20, 66, 114);
+  border-color: rgb(20, 66, 114);
+  color: rgb(236, 234, 234);
   font-weight: regular;
 }
 

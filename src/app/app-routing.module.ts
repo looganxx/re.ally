@@ -13,11 +13,7 @@ const routes: Routes = [
   { path: 'pdp', component : PDPComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  // { path: 'userLibrary', component: UserLibraryComponent},
-  // { path: 'book/:id', component: BookDetailComponent},
-  // { path: 'addBook', component: AddBookComponent},
-  // { path: 'modify/:id', component: ModifyBookComponent},
-  // { path: '**', component: NotFoundComponent}
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({

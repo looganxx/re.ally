@@ -1,0 +1,16 @@
+.card {
+  border-radius: 5rem;
+}
+
+.card-body {
+  min-height: 200px;
+}
+
+#linkedin-button:hover {
+  background-color: #0082ca;
+  border-color: #0082ca;
+}
+
+.fa-linkedin-in:hover {
+  color: white;
+}

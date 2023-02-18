@@ -1,8 +1,93 @@
-<div
-  [ngStyle]="{ 'background-image': 'url(' + photoUrl + ')', 'height': photoSize + 'px', 'width': photoSize + 'px' }"
->
-  <div *ngIf="showText" class="text-box">
-    <div class="text">Text 1</div>
-    <div class="text">Text 2</div>
+<h2 id="titolo">Appartamento in via Brombeis</h2>
+<div class="pdp-container" [ngClass]="containerClass">
+  <div *ngFor="let section of sections" class="section" [ngClass]="{'first-section': section === sections[0]}">
+    <div class="immagini">
+      <img [src]="getCurrentImage(section)">
+    </div>
+    <button (click)="goToPrevImage(section)" class="arrow-left">
+      <img src="assets/arrow-left.svg" alt="prev">
+    </button>
+    <button (click)="goToNextImage(section)" class="arrow-right">
+      <img src="assets/arrow-right.svg" alt="next">
+    </button>
   </div>
+  <div class="highlight">
+    <h3>Posizione invidiabile</h3>
+    <p>Situato al 7° piano, questo appartamento offre una vista panoramica mozzafiato e un'esposizione al sole ottimale per tutto il giorno.</p>
+    <p>Con una superficie abitabile di 75 m² e un balcone, avrai abbastanza spazio per vivere e divertirti.</p>
+    <p>Inoltre, la sua posizione privilegiata ti permetterà di raggiungere la metropolitana in pochi minuti a piedi e di avere un parcheggio privato gratuito per la tua auto.</p>
+  </div>
+</div>
+
+<div class="container" [ngClass]="containerClass1">
+
+  <div class="pdp-container1">
+    <img src="assets/piantina1.jpeg" >
+  </div>
+
+  <div class="caratteristiche">
+    <table>
+      <tr>
+        <th>CONTRATTO</th>
+        <td>VENDITA</td>
+      </tr>
+      <tr>
+        <th>TIPOLOGIA</th>
+        <td>Villa unifamiliare | Intera proprietà | Immobile di lusso</td>
+      </tr>
+      <tr>
+        <th>SUPERFICIE</th>
+        <td>500 m²</td>
+      </tr>
+      <tr>
+        <th>LOCALI</th>
+        <td>5+ (5 camere da letto, 5 altri), 3+ bagni, cucina abitabile</td>
+      </tr>
+      <tr>
+        <th>PIANO</th>
+        <td>Piano Terra</td>
+      </tr>
+      <tr>
+        <th>TOTALE PIANI EDIFICIO</th>
+        <td>3 Piani</td>
+      </tr>
+      <tr>
+        <th>POSTI AUTO</th>
+        <td>2 in garage/box, 3 all'esterno</td>
+      </tr>
+      <tr>
+        <th>DISPONIBILITÀ</th>
+        <td>Libero</td>
+      </tr>
+      <tr>
+        <th>ALTRE CARATTERISTICHE</th>
+        <td>
+          <ul>
+            <li>Cancello elettrico</li>
+            <li>Caminetto</li>
+            <li>Mansarda</li>
+            <li>Taverna</li>
+            <li>Fibra ottica</li>
+            <li>Video Citofono</li>
+            <li>Impianto di allarme</li>
+            <li>Porta blindata</li>
+            <li>Armadio a muro</li>
+            <li>1 balcone</li>
+            <li>Terrazza</li>
+            <li>Impianto tv singolo</li>
+            <li>Parzialmente Arredato</li>
+            <li>Infissi esterni in triplo vetro / legno</li>
+            <li>Esposizione doppia</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>DESCRIZIONE</th>
+        <td>Questa magnifica villa unifamiliare di lusso in vendita è perfetta per chi cerca ampi spazi e privacy. Con i suoi 500 m² di superficie e 5+ locali, tra cui 5 camere da letto e 5 bagni, questa proprietà è ideale per una grande famiglia o per chi ama ospitare. Situata al piano terra di un edificio di tre piani, la villa dispone di un garage per 2 auto e parcheggio esterno per altre 3. Cancello elettrico, caminetto, mansarda, taverna, fibra ottica e impianto di allarme sono solo alcune delle altre caratteristiche di questo immobile di prestigio.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
 </div>

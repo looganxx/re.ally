@@ -8,6 +8,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AboutComponent } from './components/about/about.component';
 import { PDPComponent } from './components/pdp/pdp.component';
+import { HowComponent } from './components/how/how.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { PDPComponent } from './components/pdp/pdp.component';
     NavbarComponent,
     WelcomeComponent,
     AboutComponent,
-    PDPComponent
+    PDPComponent,
+    HowComponent,
+    CarouselComponent,
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

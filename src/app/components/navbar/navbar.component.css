@@ -10,6 +10,7 @@
 
 .navbar {
   box-shadow: none;
+  height: auto;
 }
 
 nav {
@@ -18,4 +19,11 @@ nav {
   left: 0;
   right: 0;
   z-index: 1;
+}
+.btn{
+  transition: all 0.25s ease-out !important;
+}
+
+.clicked {
+  transform: rotate(90deg)
 }

@@ -1,50 +1,60 @@
 <!-- Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark nav-custom-color">
+<nav class="navbar navbar-expand-lg navbar-dark nav-custom-color fixed-top">
    <div class="container-fluid">
       <!-- Left elements -->
-      <ul class="navbar-nav col-3">
-         <!-- Dropdown -->
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
-               aria-expanded="false">
-               Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <li>
-                  <a class="dropdown-item" href="#">Action</a>
-               </li>
-               <li>
-                  <a class="dropdown-item" href="#">Another action</a>
-               </li>
-               <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-               </li>
-            </ul>
-         </li>
-      </ul>
+      <div class="col-3 col-sm-4">
+            <!-- <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+            <i class="fa-solid fa-ellipsis text-white"></i> -->
+            <!-- <button class="btn btn-primary" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample"
+               aria-expanded="false" aria-controls="collapseWidthExample">
+               Toggle width collapse
+            </button> -->
+            <button 
+               class="btn btn-tertiary me-2" 
+               role="button" 
+               [ngClass]="{'clicked': isClicked}"
+               (click)="toggleClick()"
+               data-mdb-toggle="collapse"
+               data-mdb-target="#collapseMenu"
+               aria-expanded="false"
+               aria-controls="collapseMenu">
+                  <i class="fa-solid fa-ellipsis-vertical text-white" style="font-size: 20px"></i>
+            </button>
+            <div class="d-inline-block ms-3">
+               <div class="collapse collapse-horizontal" id="collapseMenu">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                     <li class="nav-item"><a routerLink="/" class="nav-link">Find</a></li>
+                     <li class="nav-item"><a routerLink="/" class="nav-link">Agencies</a></li>
+                     <li class="nav-item"><a routerLink="/login" class="nav-link">Services</a></li>
+                  </ul>
+               </div>
+            </div>
+      </div>
       <!-- Left elements -->
 
       <!-- Center elements -->
       <!-- Brand -->
-      <a class="navbar-brand justify-content-center col-6 me-auto" href="#">
+      <a class="navbar-brand justify-content-center col-6 col-sm-4 me-auto" href="#">
          <!-- <img src="" height="20" alt="re.ally Logo" loading="lazy"/> -->
          re.ally
       </a>
       <!-- Center elements -->
 
       <!-- Right elements -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCollapse"
-         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-         <i class="fas fa-bars"></i>
-      </button>
-      
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-         <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a routerLink="/" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a routerLink="/" class="nav-link">About</a></li>
-            <li class="nav-item"><a routerLink="/login" class="nav-link">Sign in</a></li>
-            <li class="nav-item"><a routerLink="/register" class="nav-link">Sign up</a></li>
-         </ul>
+      <div class="col-3 col-sm-4">
+         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+         </button>
+         
+         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+               <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
+               <li class="nav-item"><a routerLink="/about" class="nav-link">About</a></li>
+               <li class="nav-item"><a routerLink="/login" class="nav-link">Login</a></li>
+               <li class="nav-item"><a routerLink="/register" class="nav-link">Register</a></li>
+            </ul>
+         </div>
       </div>
       <!-- Right elements -->
    </div>

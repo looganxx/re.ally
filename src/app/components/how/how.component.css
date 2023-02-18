@@ -1,0 +1,36 @@
+.custom-text-color {
+  color: rgb(20, 66, 114);
+}
+
+.custom-card-color {
+  background-color: rgb(236, 234, 234);
+}
+
+.custom-icon {
+  color: #144272;
+  font-size: 42px;
+}
+
+.card-max-width {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.custom-arrow-icon {
+  color: rgb(236, 234, 234);
+}
+
+.card {
+  border-radius: 5rem;
+}
+
+.bg-custom {
+  background-color: #144272;
+}
+
+.btn-card-custom-color:hover {
+  background-color: rgb(236, 234, 234);
+  border-color: rgb(236, 234, 234);
+  color: rgb(20, 66, 114);
+  font-weight: regular;
+}

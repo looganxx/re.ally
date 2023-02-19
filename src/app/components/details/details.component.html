@@ -1,0 +1,126 @@
+<body>
+    <div class="foto" [ngClass]="containerfoto">
+      <div class="quadrato">
+        <div *ngFor="let section of sections" class="section">
+          <img [src]="getCurrentImage(section)">
+          <button (click)="goToPrevImage(section)" class="arrow-left">
+            <img src="assets/arrow-left.svg" alt="prev">
+          </button>
+          <button (click)="goToNextImage(section)" class="arrow-right">
+            <img src="assets/arrow-right.svg" alt="next">
+          </button>
+        </div>
+      </div>
+      <h2 id="titolo">Apartment in via Brombeis</h2>
+      <h3 id="scrolla">Scroll up for more information</h3>
+    </div>
+
+
+    <div class="info" [ngClass]="info">
+
+    <div class="img-container">
+        <img src="assets/plani.webp" id="plani">
+    </div>
+  
+    <div class="caratteristiche">
+      <table>
+        <tr>
+          <th>CONTRATTO</th>
+          <td>VENDITA</td>
+        </tr>
+        <tr>
+          <th>TIPOLOGIA</th>
+          <td>Villa unifamiliare | Intera proprietà | Immobile di lusso</td>
+        </tr>
+        <tr>
+          <th>SUPERFICIE</th>
+          <td>500 m²</td>
+        </tr>
+        <tr>
+          <th>LOCALI</th>
+          <td>5+ (5 camere da letto, 5 altri), 3+ bagni, cucina abitabile</td>
+        </tr>
+        <tr>
+          <th>PIANO</th>
+          <td>Piano Terra</td>
+        </tr>
+        <tr>
+          <th>TOTALE PIANI EDIFICIO</th>
+          <td>3 Piani</td>
+        </tr>
+        <tr>
+          <th>POSTI AUTO</th>
+          <td>2 in garage/box, 3 all'esterno</td>
+        </tr>
+        <tr>
+          <th>DISPONIBILITÀ</th>
+          <td>Libero</td>
+        </tr>
+        <tr>
+            <th>ALTRE CARATTERISTICHE</th>
+            <td>
+              <ul>
+                <li>Cancello elettrico</li>
+                <li>Caminetto</li>
+                <li>Mansarda</li>
+                <li>Taverna</li>
+                <li>Fibra ottica</li>
+                <li>Video Citofono</li>
+                <li>Impianto di allarme</li>
+                <li>Porta blindata</li>
+                <li>Armadio a muro</li>
+                <li>1 balcone</li>
+                <li>Terrazza</li>
+                <li>Impianto tv singolo</li>
+                <li>Parzialmente Arredato</li>
+                <li>Infissi esterni in triplo vetro / legno</li>
+                <li>Esposizione doppia</li>
+              </ul>
+            </td>
+        </tr>
+        <tr>
+          <th>DESCRIZIONE</th>
+          <td>This magnificent luxury single-family villa for sale is perfect for those seeking ample space and privacy. With its 500 square meters of surface and 5+ rooms, including 5 bedrooms and 5 bathrooms, this property is ideal for a large family or for those who love to host. Located on the ground floor of a three-story building, the villa features a garage for 2 cars and outdoor parking for another 3.
+
+            Upon entering the property, you will be welcomed by a spacious and bright living room with large windows that allow natural light to flood the space. The living room features a cozy fireplace, creating a warm and inviting atmosphere. The kitchen is fully equipped and features modern appliances and a large dining table perfect for family meals.
+            
+            The villa boasts 5 spacious bedrooms, each with its own en-suite bathroom, ensuring maximum comfort and privacy for all occupants. The bedrooms are elegantly furnished and feature ample storage space, with built-in wardrobes and dressers. The villa also features a charming attic, perfect for use as a playroom or a home office.
+            
+            One of the highlights of this property is the large terrace that overlooks the lush garden. The terrace is the perfect place to relax and unwind, with plenty of space for outdoor dining and entertaining guests. The garden is beautifully landscaped and features a variety of plants and trees, providing a tranquil and serene atmosphere.
+            
+            Other features of this prestigious property include a video intercom system, an alarm system, and a reinforced door for added security. The property is partially furnished, and the exterior windows are triple glazed, ensuring maximum energy efficiency and noise reduction.
+            
+            Overall, this luxury villa for sale is the perfect retreat for those looking for privacy, comfort, and elegance. Located in a quiet residential area, yet within easy reach of shops, restaurants, and other amenities, this property truly offers the best of both worlds.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Email</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your Email..">
+    
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      
+          <input type="submit" value="Submit">
+          <input type="submit2" value="Richiedi visita">
+      
+        </form>
+    </div>
+
+
+    </div>
+
+      
+</body>
+  

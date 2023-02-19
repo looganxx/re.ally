@@ -1,3 +1,4 @@
+<body>
 <h2 id="titolo">Appartamento in via Brombeis</h2>
 <div class="pdp-container" [ngClass]="containerClass">
   <div *ngFor="let section of sections" class="section" [ngClass]="{'first-section': section === sections[0]}">
@@ -10,12 +11,6 @@
     <button (click)="goToNextImage(section)" class="arrow-right">
       <img src="assets/arrow-right.svg" alt="next">
     </button>
-  </div>
-  <div class="highlight">
-    <h3>Posizione invidiabile</h3>
-    <p>Situato al 7° piano, questo appartamento offre una vista panoramica mozzafiato e un'esposizione al sole ottimale per tutto il giorno.</p>
-    <p>Con una superficie abitabile di 75 m² e un balcone, avrai abbastanza spazio per vivere e divertirti.</p>
-    <p>Inoltre, la sua posizione privilegiata ti permetterà di raggiungere la metropolitana in pochi minuti a piedi e di avere un parcheggio privato gratuito per la tua auto.</p>
   </div>
 </div>
 
@@ -88,6 +83,5 @@
       </tr>
     </table>
   </div>
-
-  
 </div>
+</body>

@@ -1,4 +1,3 @@
-/**
 import Nat "mo:base/Nat";
 import Nat8 "mo:base/Nat8";
 import Nat16 "mo:base/Nat16";
@@ -171,12 +170,6 @@ shared actor class Dip721NFT(custodian: Principal, init : Types.Dip721NonFungibl
   };
 
     public query func greet(name : Text) : async Text {
-    return "Hello baby, " # name # "!";
-    };
-}
-*/
-actor{
-  public query func greet(name : Text) : async Text {
     return "Hello baby, " # name # "!";
     };
 }

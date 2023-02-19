@@ -5,6 +5,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PDPComponent } from './components/pdp/pdp.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { DetailsComponent } from './components/details/details.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,9 @@ const routes: Routes = [
   { path: 'pdp', component : PDPComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'details', component: DetailsComponent }
+
 ];
 
 @NgModule({
